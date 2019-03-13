@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"
+       default-autowire="constructor">
+     <bean class="com.notifierDomain.teamcity.notifierPlugin.AppServer"/>
+     <bean class="com.notifierDomain.teamcity.notifierPlugin.send_weChatMsg"/>
+     <bean class="com.notifierDomain.teamcity.notifierPlugin.Singleton"/>
+     <bean class="com.notifierDomain.teamcity.notifierPlugin.urlData"/>
+     <bean class="com.notifierDomain.teamcity.notifierPlugin.Utils"/>
+     <bean class="com.notifierDomain.teamcity.notifierPlugin.WeChatData"/>
+     <bean class="com.notifierDomain.teamcity.notifierPlugin.WeChatNotifier"/>
+     <bean class="com.notifierDomain.teamcity.notifierPlugin.WeChatAPI"/>
+     <bean class="com.notifierDomain.teamcity.notifierPlugin.WeChatDepartment"/>
+     <bean class="com.notifierDomain.teamcity.notifierPlugin.WeChatUser"/>
+     <bean class="com.notifierDomain.teamcity.notifierPlugin.WeChatNotifierSettingPage"/>
+</beans>

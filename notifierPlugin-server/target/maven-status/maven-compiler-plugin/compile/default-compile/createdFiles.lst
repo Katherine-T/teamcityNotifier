@@ -1,0 +1,3 @@
+com\notifierDomain\teamcity\notifierPlugin\WeChatPageExtension.class
+com\notifierDomain\teamcity\notifierPlugin\AppServer.class
+com\notifierDomain\teamcity\notifierPlugin\WeChatNotifierSettingPage.class
