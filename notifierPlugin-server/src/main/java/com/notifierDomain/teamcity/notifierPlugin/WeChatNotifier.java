@@ -50,7 +50,7 @@ public class WeChatNotifier implements Notificator {
 
     public void notifyBuildFailed(SRunningBuild srb, Set<SUser> users) {
         LOG.debug("notifyBuildFailed");
-        doNotifications(srb,"Build " + srb.getFullName() + "#" + srb.getBuildNumber() + " failed!" ,users);
+        doNotifications(srb,"Build " + srb.getFullName() + "#" + srb.getBuildNumber() + " failed!" + " Path:"+ srb.getCurrentPath(),users);
     }
 
     public void notifyBuildFailedToStart(SRunningBuild srb, Set<SUser> users) {
@@ -164,7 +164,7 @@ public class WeChatNotifier implements Notificator {
      */
     public void notifyBuildSuccessful(SRunningBuild srb, Set<SUser> users) {
         LOG.debug("notifyBuildSuccessful");
-        doNotifications(srb,"Build " + srb.getFullName() + " #" + srb.getBuildNumber() + " success!" ,users);
+        doNotifications(srb,"Build " + srb.getFullName() + " #" + srb.getBuildNumber() + " success!" + " Path:"+ srb.getCurrentPath(),users);
     }
 
 
@@ -172,26 +172,48 @@ public class WeChatNotifier implements Notificator {
 //调用微信通知部分
     public void doNotifications(Build build,String message, Set<SUser> users) {
         String noti_user = build.getBuildType().getBuildParameter("env.NOTI_USER");
+        List<WeChatUser> value;
+        Map<String, String> myMap = new HashMap<String, String>();
 
-//        String username; Set<SUser> users
-        //       for(SUser user : users) {
-        //           LOG.debug("触发用户: " + user.getUsername());
-        //       }
+        WeChatAPI ap = new WeChatAPI();
+        List<WeChatDepartment> list = WeChatAPI.getDepartments();
+        Map<String, List<WeChatUser>> user = WeChatAPI.getAllUsers(list);
+        for (String key : user.keySet()) {
+            value = user.get(key);
+            for (int i = 0; i < value.size(); i++) {
+                String tn[] =value.get(i).getName().split("-");
+                myMap.put(tn[0], value.get(i).getId());
+            }
+        }
+        String s = noti_user;
+        String temp = "";
+        String nu="";
+        String a[] = s.split(",");
+        for (int i = 0; i < a.length; i++) {
+            Set set1=myMap.entrySet();
+            Iterator it1=set1.iterator();
+            while(it1.hasNext()) {
+                Map.Entry entry=(Map.Entry)it1.next();
+                if(entry.getKey().equals(a[i])) {
+                    temp= (String) entry.getValue();
+                }
+            }
+            nu = nu + temp +"|";
+        }
         send_weChatMsg sw = new send_weChatMsg();
         try {
             Singleton singleton = Singleton.getInstance();
             Map<String, Object> map = singleton.getAccessTokenAndJsapiTicket(APPID,
                     APPSCREAT);
             String token = (String) map.get("access_token");
-            String postdata = sw.createpostdata(noti_user, "text", APPLICATION_ID, "content", message);
-            String resp = sw.post("utf-8", send_weChatMsg.CONTENT_TYPE, (new urlData()).getSendMessage_Url(), postdata, token);
+            String postdata = sw.createpostdata(nu, "text", APPLICATION_ID, "content",message);
+            String resp = sw.post("utf-8", send_weChatMsg.CONTENT_TYPE,(new urlData()).getSendMessage_Url(), postdata, token);
             System.out.println(token);
             //       String a = sw.getDep(token);
             //       System.out.println(a);
         } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 
 

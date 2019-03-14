@@ -16,8 +16,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notifierPlugin-server/src/main/java/com/notifierDomain/teamcity/notifierPlugin/WeChatNotifier.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-361">
-              <caret line="28" column="53" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
+            <state relative-caret-position="341">
+              <caret line="183" selection-start-line="183" selection-end-line="183" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1571#1572#0" expanded="true" />
@@ -30,17 +30,29 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/notifierPlugin-server/src/main/resources/buildServerResources/WeChatNotifierSettingPage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+            <state relative-caret-position="760">
+              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+              <folding>
+                <element signature="n#style#0;n#select#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/notifierPlugin-server/src/main/resources/META-INF/build-server-plugin-notifierPlugin.xml">
+        <entry file="file://$PROJECT_DIR$/notifierPlugin-server/src/main/resources/buildServerResources/temp.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+            <state relative-caret-position="399">
+              <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/notifierPlugin-server/src/main/java/com/notifierDomain/teamcity/notifierPlugin/Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25">
+              <caret line="14" column="73" lean-forward="true" selection-start-line="14" selection-start-column="73" selection-end-line="14" selection-end-column="73" />
             </state>
           </provider>
         </entry>
@@ -55,46 +67,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/notifierPlugin-server/src/main/resources/buildServerResources/WechatNotifierSetting.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" selection-start-line="11" selection-end-line="11" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notifierPlugin-server/src/main/java/com/notifierDomain/teamcity/notifierPlugin/WeChatUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-72">
+            <state relative-caret-position="19">
               <caret line="9" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/notifierPlugin-server/src/main/java/com/notifierDomain/teamcity/notifierPlugin/WeChatPageExtension.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/notifierPlugin-server/src/main/java/com/notifierDomain/teamcity/notifierPlugin/WeChatData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
-              <folding>
-                <element signature="e#194#195#0" expanded="true" />
-                <element signature="e#221#222#0" expanded="true" />
-                <element signature="e#260#261#0" expanded="true" />
-                <element signature="e#292#293#0" expanded="true" />
-                <element signature="e#325#326#0" expanded="true" />
-                <element signature="e#355#356#0" expanded="true" />
-                <element signature="e#400#401#0" expanded="true" />
-                <element signature="e#438#439#0" expanded="true" />
-                <element signature="e#468#469#0" expanded="true" />
-                <element signature="e#498#499#0" expanded="true" />
-                <element signature="e#540#541#0" expanded="true" />
-                <element signature="e#578#579#0" expanded="true" />
-                <element signature="e#610#611#0" expanded="true" />
-                <element signature="e#639#640#0" expanded="true" />
-                <element signature="e#682#683#0" expanded="true" />
-                <element signature="e#718#719#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -102,11 +87,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notifierPlugin-server/src/main/java/com/notifierDomain/teamcity/notifierPlugin/test2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="969">
+              <caret line="78" column="1" selection-start-line="78" selection-start-column="1" selection-end-line="78" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#869#881#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/notifierPlugin-server/src/main/java/com/notifierDomain/teamcity/notifierPlugin/WeChatDepartment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+              <folding>
+                <element signature="e#368#369#0" expanded="true" />
+                <element signature="e#399#400#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -115,23 +112,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notifierPlugin-server/src/main/java/com/notifierDomain/teamcity/notifierPlugin/WeChatAPI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="210" column="66" lean-forward="true" selection-start-line="210" selection-start-column="66" selection-end-line="210" selection-end-column="66" />
+            <state relative-caret-position="315">
+              <caret line="184" selection-start-line="184" selection-end-line="184" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#7609#7621#0" expanded="true" />
-                <element signature="e#8656#8672#0" expanded="true" />
-                <element signature="e#8659#8671#0" expanded="true" />
+                <element signature="e#7542#7554#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/notifierPlugin-server/src/main/resources/buildServerResources/WechatNotifierSetting.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -161,15 +147,16 @@
         <option value="$PROJECT_DIR$/notifierPlugin-server/pom.xml" />
         <option value="$PROJECT_DIR$/notifierPlugin-server/src/main/java/com/notifierDomain/teamcity/notifierPlugin/WeChatPageExtension.java" />
         <option value="$PROJECT_DIR$/notifierPlugin-server/src/main/java/com/notifierDomain/teamcity/notifierPlugin/send_weChatMsg.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/notifierPlugin-server/src/main/java/com/notifierDomain/teamcity/notifierPlugin/WeChatNotifierSettingPage.java" />
         <option value="$PROJECT_DIR$/notifierPlugin-server/src/main/resources/META-INF/build-server-plugin-notifierPlugin.xml" />
-        <option value="$PROJECT_DIR$/notifierPlugin-server/src/main/java/com/notifierDomain/teamcity/notifierPlugin/WeChatNotifier.java" />
-        <option value="$PROJECT_DIR$/notifierPlugin-server/src/main/java/com/notifierDomain/teamcity/notifierPlugin/Test.java" />
         <option value="$PROJECT_DIR$/notifierPlugin-server/src/main/java/com/notifierDomain/teamcity/notifierPlugin/WeChatDepartment.java" />
         <option value="$PROJECT_DIR$/notifierPlugin-server/src/main/resources/buildServerResources/WechatNotifierSetting.jsp" />
-        <option value="$PROJECT_DIR$/notifierPlugin-server/src/main/java/com/notifierDomain/teamcity/notifierPlugin/test2.java" />
+        <option value="$PROJECT_DIR$/notifierPlugin-server/src/main/resources/buildServerResources/temp.jsp" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/notifierPlugin-server/src/main/java/com/notifierDomain/teamcity/notifierPlugin/Test.java" />
+        <option value="$PROJECT_DIR$/notifierPlugin-server/src/main/java/com/notifierDomain/teamcity/notifierPlugin/WeChatNotifier.java" />
         <option value="$PROJECT_DIR$/notifierPlugin-server/src/main/java/com/notifierDomain/teamcity/notifierPlugin/WeChatAPI.java" />
+        <option value="$PROJECT_DIR$/notifierPlugin-server/src/main/java/com/notifierDomain/teamcity/notifierPlugin/test2.java" />
         <option value="$PROJECT_DIR$/notifierPlugin-server/src/main/resources/buildServerResources/WeChatNotifierSettingPage.jsp" />
       </list>
     </option>
@@ -181,9 +168,9 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds">
     <option name="x" value="77" />
-    <option name="y" value="8" />
+    <option name="y" value="25" />
     <option name="width" value="1750" />
     <option name="height" value="970" />
   </component>
@@ -209,8 +196,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -283,18 +268,20 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552462188637" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Facets" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552533346228" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../201903131100/notifierPlugin/notifierPlugin-server" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.37356323" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -379,17 +366,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1551774295644</updated>
-      <workItem from="1552446074958" duration="10619000" />
+      <workItem from="1552446074958" duration="21892000" />
+      <workItem from="1552525570433" duration="6662000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10619000" />
+    <option name="totallyTimeSpent" value="28554000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="62" y="20" width="1400" height="776" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23927614" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26974666" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -397,12 +386,9 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Learn" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.20226309" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" weight="0.21216407" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.28005657" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" visible="true" weight="0.23255815" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -411,8 +397,9 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50067025" side_tool="true" weight="0.43140027" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3286119" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Spring" order="11" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -421,6 +408,8 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="right" id="Maven" order="8" />
+      <window_info anchor="right" id="Database" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -483,20 +472,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notifierPlugin-server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="77" selection-start-line="77" selection-end-line="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/notifierPlugin-server/src/main/java/com/notifierDomain/teamcity/notifierPlugin/AppServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -514,24 +489,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notifierPlugin-server/src/main/java/com/notifierDomain/teamcity/notifierPlugin/WeChatDepartment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-          <folding>
-            <element signature="e#368#369#0" expanded="true" />
-            <element signature="e#399#400#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notifierPlugin-server/src/main/java/com/notifierDomain/teamcity/notifierPlugin/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/notifierPlugin-server/src/main/resources/META-INF/build-server-plugin-notifierPlugin.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -546,23 +503,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notifierPlugin-server/src/main/resources/buildServerResources/Hello.jsp">
+    <entry file="file://$PROJECT_DIR$/notifierPlugin-server/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        <state relative-caret-position="1463">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notifierPlugin-server/src/main/resources/buildServerResources/WechatNotifierSetting.jsp">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        <state relative-caret-position="646">
+          <caret line="34" column="48" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/notifierPlugin-server/src/main/java/com/notifierDomain/teamcity/notifierPlugin/WeChatData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
+        <state relative-caret-position="253">
           <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
           <folding>
             <element signature="e#194#195#0" expanded="true" />
@@ -585,23 +542,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notifierPlugin-server/src/main/java/com/notifierDomain/teamcity/notifierPlugin/WeChatAPI.java">
+    <entry file="file://$PROJECT_DIR$/notifierPlugin-server/src/main/java/com/notifierDomain/teamcity/notifierPlugin/WeChatDepartment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="210" column="66" lean-forward="true" selection-start-line="210" selection-start-column="66" selection-end-line="210" selection-end-column="66" />
+        <state relative-caret-position="114">
+          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#7609#7621#0" expanded="true" />
-            <element signature="e#8656#8672#0" expanded="true" />
-            <element signature="e#8659#8671#0" expanded="true" />
+            <element signature="e#368#369#0" expanded="true" />
+            <element signature="e#399#400#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notifierPlugin-server/src/main/java/com/notifierDomain/teamcity/notifierPlugin/WeChatUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/notifierPlugin-server/src/main/java/com/notifierDomain/teamcity/notifierPlugin/WeChatNotifier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-361">
-          <caret line="28" column="53" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
+        <state relative-caret-position="341">
+          <caret line="183" selection-start-line="183" selection-end-line="183" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1571#1572#0" expanded="true" />
@@ -610,28 +572,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notifierPlugin-server/src/main/java/com/notifierDomain/teamcity/notifierPlugin/WeChatUser.java">
+    <entry file="file://$PROJECT_DIR$/notifierPlugin-server/src/main/java/com/notifierDomain/teamcity/notifierPlugin/WeChatAPI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-72">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="315">
+          <caret line="184" selection-start-line="184" selection-end-line="184" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#7542#7554#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notifierPlugin-server/src/main/java/com/notifierDomain/teamcity/notifierPlugin/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="14" column="73" lean-forward="true" selection-start-line="14" selection-start-column="73" selection-end-line="14" selection-end-column="73" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/notifierPlugin-server/src/main/java/com/notifierDomain/teamcity/notifierPlugin/test2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="969">
+          <caret line="78" column="1" selection-start-line="78" selection-start-column="1" selection-end-line="78" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#869#881#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notifierPlugin-server/src/main/resources/buildServerResources/Hello.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notifierPlugin-server/src/main/resources/buildServerResources/temp.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notifierPlugin-server/src/main/resources/buildServerResources/WechatNotifierSetting.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" selection-start-line="11" selection-end-line="11" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/notifierPlugin-server/src/main/resources/buildServerResources/WeChatNotifierSettingPage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        <state relative-caret-position="760">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="n#style#0;n#select#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -644,7 +640,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.37356323" />
               </list>
             </option>
           </splitter-proportions>
@@ -667,7 +663,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.37356323" />
               </list>
             </option>
           </splitter-proportions>
@@ -679,7 +675,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.37356323" />
               </list>
             </option>
           </splitter-proportions>
@@ -687,7 +683,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>notifierPlugin-server</last-edited>
+          <last-edited>notifierPlugin</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

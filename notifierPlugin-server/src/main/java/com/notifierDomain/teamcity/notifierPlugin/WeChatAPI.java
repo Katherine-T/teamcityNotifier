@@ -172,52 +172,22 @@ public class WeChatAPI {
         return "success";
     }
     */
-    public static String mapToJson(Object result)
-    {
-         if(result!=null){
-            JSONObject obj=JSONObject.fromObject(result);
-           return obj.toString();
-         }
-      return null;
-    }
+     public static List<WeChatUser> getUserList() {
+         List<WeChatUser> value;
+         List<WeChatUser> userList = new ArrayList<WeChatUser>();
+         WeChatAPI ap = new WeChatAPI();
+       List<WeChatDepartment> list = ap.getDepartments();
+       Map<String, List<WeChatUser>> user = ap.getAllUsers(list);
+       for (String key : user.keySet()) {
+          value = user.get(key);
+           for (int i = 0; i < value.size(); i++) {
+               String tn[] =value.get(i).getName().split("-");
+               value.get(i).setName(tn[0]);
+               userList.add(value.get(i));
+          }
+      }
+      return userList;
 
-    @ModelAttribute
-    public void model(Model model) {
-        List<WeChatUser> value;
-        List<WeChatUser> userList =new ArrayList<WeChatUser>();
-        WeChatAPI ap = new WeChatAPI();
-        List<WeChatDepartment> list = ap.getDepartments();
-        Map<String, List<WeChatUser>> user = ap.getAllUsers(list);
-        for(String key : user.keySet()){
-            value=user.get(key);
-            for(int i = 0;i < value.size();i++){
-                userList.add(value.get(i));
-            }
-        }
- //       for(int i = 0;i < userList.size();i++){
- //           out.println(userList.get(i).getName()+ userList.get(i).getId());
- //       }
-        model.addAttribute("string","后台传递过来的字符串");
-        model.addAttribute("notifierUser",userList);
-        model.addAttribute("json_notifierUser",mapToJson(userList));
-    }
-    @RequestMapping(value={"/notifierUser","/",""},method= RequestMethod.GET)
-    public String userList(Model model){
-        List<WeChatUser> value;
-        Map<String, String> myMap= new HashMap<String, String>();
-        List<WeChatUser> userList =new ArrayList<WeChatUser>();
-        WeChatAPI ap = new WeChatAPI();
-        List<WeChatDepartment> list = ap.getDepartments();
-        Map<String, List<WeChatUser>> user = ap.getAllUsers(list);
-        for(String key : user.keySet()){
-            value=user.get(key);
-            for(int i = 0;i < value.size();i++){
-                myMap.put(value.get(i).getName(),value.get(i).getId());
-            }
-        }
-        //model.addAllAttributes(user);//key是map（类型名首字母小写）
-        model.addAttribute("notifierUser",myMap);
-        return "notifierUser/list";
-    }
 
+     }
 }

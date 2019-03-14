@@ -32,7 +32,7 @@
                       <compilerArguments>
                           <bootclasspath>C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar</bootclasspath>
                       </compilerArguments>
-                      <encoding>utf8</encoding>
+                      <encoding>utf-8</encoding>
                   </configuration>
               </plugin>
               <plugin>
