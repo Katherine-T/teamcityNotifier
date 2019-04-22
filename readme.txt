@@ -1,5 +1,5 @@
 
- TeamCity server-side plugin
+ TeamCity 
 
 
  
