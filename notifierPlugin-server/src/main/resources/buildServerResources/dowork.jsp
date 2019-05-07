@@ -4,10 +4,14 @@
 
 <%
     String userids= request.getParameter("userids");
+    WeChatNotifier notifi = new WeChatNotifier();
+    notifi.setIDs(userids);
+    String msg =notifi.getIDs();
 %>
 
 <html>
 <body>
-<%=userids %>
+test
+<%=msg %>
 </body>
 </html>

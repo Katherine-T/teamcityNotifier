@@ -98,7 +98,16 @@ public class send_weChatMsg {
         wcd.setText(content);
         return gson.toJson(wcd);
     }
-
+    protected String creategrouppostdata(String chatid, String msgtype, String contentKey,
+                                    String contentValue) {
+        WeChatData wcd = new WeChatData();
+        wcd.setTochat(chatid);
+        wcd.setMsgtype(msgtype);
+        Map<Object, Object> content = new HashMap<Object, Object>();
+        content.put(contentKey, contentValue + "\n--------\n" + df.format(new Date()));
+        wcd.setText(content);
+        return gson.toJson(wcd);
+    }
     /**
      * @Title 创建微信发送请求post实体
      * @param charset消息编码

@@ -5,6 +5,7 @@ public class WeChatData {
     String msgtype;
     int agentid;
     Object text;//实际接收Map类型数据
+    String chatid;
 
     public Object getText() {
         return text;
@@ -29,5 +30,11 @@ public class WeChatData {
     }
     public void setTouser(String touser) {
         this.touser = touser;
+    }
+    public String getTochat() {
+        return chatid;
+    }
+    public void setTochat(String chatid) {
+        this.chatid =chatid;
     }
 }

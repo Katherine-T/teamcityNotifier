@@ -5,6 +5,7 @@ public class urlData {
     String corpsecret;
     String Get_Token_Url;
     String SendMessage_Url;
+    String GroupSendMessage_Url;
 
     public String getCorpid() {
         return corpid;
@@ -33,5 +34,8 @@ public class urlData {
         SendMessage_Url = "https://qyapi.weixin.qq.com/cgi-bin/message/send?access_token=";
         return SendMessage_Url;
     }
-
+    public String getGroupSendMessage_Url() {
+        GroupSendMessage_Url = "https://qyapi.weixin.qq.com/cgi-bin/appchat/send?access_token=";
+        return GroupSendMessage_Url;
+    }
 }

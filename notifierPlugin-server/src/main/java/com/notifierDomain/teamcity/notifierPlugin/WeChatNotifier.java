@@ -9,8 +9,6 @@ import jetbrains.buildServer.serverSide.*;
 import jetbrains.buildServer.serverSide.mute.MuteInfo;
 import jetbrains.buildServer.serverSide.problems.BuildProblemInfo;
 import jetbrains.buildServer.tests.TestName;
-import jetbrains.buildServer.users.NotificatorPropertyKey;
-import jetbrains.buildServer.users.PropertyKey;
 import jetbrains.buildServer.users.SUser;
 
 
@@ -32,6 +30,12 @@ public class WeChatNotifier implements Notificator {
     private static final Logger LOG = Logger.getInstance(WeChatNotifier.class.getName());
 //    private ArrayList<UserPropertyInfo> userProps;
     private String username;
+
+    public WeChatNotifier() {
+
+    }
+
+
     public String getName(){
 
         return username;
@@ -50,12 +54,15 @@ public class WeChatNotifier implements Notificator {
 
     public void notifyBuildFailed(SRunningBuild srb, Set<SUser> users) {
         LOG.debug("notifyBuildFailed");
-        doNotifications(srb,"Build " + srb.getFullName() + "#" + srb.getBuildNumber() + " failed!" + " Path:"+ srb.getCurrentPath(),users);
+        doGroupNotifications(srb,"Build " + srb.getFullName() + "#" + srb.getBuildNumber() +"  Triggered By: "+ srb.getTriggeredBy().getUser().getName()+ " failed!" + " Path: https://ci.finedevelop.com/viewLog.html?buildId="+ srb.getBuildId()+"&buildTypeId="+ srb.getBuildTypeExternalId(),users);
+        doNotifications(srb,"Build " + srb.getFullName() + "#" + srb.getBuildNumber() +"  Triggered By: "+ srb.getTriggeredBy().getUser().getName()+ " failed!" + " Path: https://ci.finedevelop.com/viewLog.html?buildId="+ srb.getBuildId()+"&buildTypeId="+ srb.getBuildTypeExternalId(),users);
+
     }
 
     public void notifyBuildFailedToStart(SRunningBuild srb, Set<SUser> users) {
         LOG.debug("notifyBuildFailedToStart");
-        doNotifications(srb,"Build " + srb.getFullName() + "#" + srb.getBuildNumber() + " failed to start!" ,users);
+        doGroupNotifications(srb,"Build " + srb.getFullName() + "#" + srb.getBuildNumber() +"  Triggered By: "+ srb.getTriggeredBy().getUser().getName()+ " failed to start!" + " Path: https://ci.finedevelop.com/viewLog.html?buildId="+ srb.getBuildId()+"&buildTypeId="+ srb.getBuildTypeExternalId(),users);
+        doNotifications(srb,"Build " + srb.getFullName() + "#" + srb.getBuildNumber() +"  Triggered By: "+ srb.getTriggeredBy().getUser().getName()+ " failed to start!" + " Path: https://ci.finedevelop.com/viewLog.html?buildId="+ srb.getBuildId()+"&buildTypeId="+ srb.getBuildTypeExternalId(),users);
     }
     @Override
     public void notifyLabelingFailed(@NotNull Build build, @NotNull VcsRoot vcsRoot, @NotNull Throwable throwable, @NotNull Set<SUser> set) {
@@ -68,7 +75,8 @@ public class WeChatNotifier implements Notificator {
      */
     public void notifyBuildFailing(SRunningBuild srb, Set<SUser> users) {
         LOG.debug("notifyBuildFailing");
-        doNotifications(srb,"Build " + srb.getFullName() + " #" + srb.getBuildNumber() + " failing!" ,users);
+        doGroupNotifications(srb,"Build " + srb.getFullName() + " #" + srb.getBuildNumber() +"  Triggered By: "+ srb.getTriggeredBy().getUser().getName()+ " is failing!" + " Path: https://ci.finedevelop.com/viewLog.html?buildId="+ srb.getBuildId()+"&buildTypeId="+ srb.getBuildTypeExternalId(),users);
+        doNotifications(srb,"Build " + srb.getFullName() + " #" + srb.getBuildNumber() +"  Triggered By: "+ srb.getTriggeredBy().getUser().getName()+ " is failing!" + " Path: https://ci.finedevelop.com/viewLog.html?buildId="+ srb.getBuildId()+"&buildTypeId="+ srb.getBuildTypeExternalId(),users);
     }
 
     /* (non-Javadoc)
@@ -76,6 +84,7 @@ public class WeChatNotifier implements Notificator {
      */
     public void notifyBuildProbablyHanging(SRunningBuild srb, Set<SUser> users) {
         LOG.debug("notifyBuildProbablyHanging");
+        doGroupNotifications(srb,"Build " + srb.getFullName() + " #" + srb.getBuildNumber() + " probably hanging!" ,users);
         doNotifications(srb,"Build " + srb.getFullName() + " #" + srb.getBuildNumber() + " probably hanging!" ,users);
     }
 
@@ -156,7 +165,8 @@ public class WeChatNotifier implements Notificator {
      */
     public void notifyBuildStarted(SRunningBuild srb, Set<SUser> users) {
         LOG.debug("notifyBuildStarted");
-        doNotifications(srb,"Build " + srb.getFullName() + " #" + srb.getBuildNumber() + " started!" ,users);
+        doGroupNotifications(srb,"Build " + srb.getFullName() + " #" + srb.getBuildNumber() + " started!" +"  Triggered By: "+ srb.getTriggeredBy().getUser().getName(),users);
+        doNotifications(srb,"Build " + srb.getFullName() + " #" + srb.getBuildNumber() + " started!" +"  Triggered By: "+ srb.getTriggeredBy().getUser().getName(),users);
     }
 
     /* (non-Javadoc)
@@ -164,14 +174,22 @@ public class WeChatNotifier implements Notificator {
      */
     public void notifyBuildSuccessful(SRunningBuild srb, Set<SUser> users) {
         LOG.debug("notifyBuildSuccessful");
-        doNotifications(srb,"Build " + srb.getFullName() + " #" + srb.getBuildNumber() + " success!" + " Path:"+ srb.getCurrentPath(),users);
+        doGroupNotifications(srb,"Build " + srb.getFullName() + " #" + srb.getBuildNumber() + " success!" + " Path: https://ci.finedevelop.com/viewLog.html?buildId="+ srb.getBuildId()+"&buildTypeId="+ srb.getBuildTypeExternalId(),users);
+        doNotifications(srb,"Build " + srb.getFullName() + " #" + srb.getBuildNumber() + " success!" + " Path: https://ci.finedevelop.com/viewLog.html?buildId="+ srb.getBuildId()+"&buildTypeId="+srb.getBuildTypeExternalId(),users);
+    }
+    private String userids;
+
+    public String getIDs() {
+        return userids;
+    }
+    public void setIDs(String userids) {
+        this.userids = userids;
     }
 
 
-
-//调用微信通知部分
+    //调用微信通知部分
     public void doNotifications(Build build,String message, Set<SUser> users) {
-        String noti_user = build.getBuildType().getBuildParameter("env.NOTI_USER");
+        String noti_user = noti_user = build.getBuildType().getBuildParameter("env.NOTI_USER");
         List<WeChatUser> value;
         Map<String, String> myMap = new HashMap<String, String>();
 
@@ -209,13 +227,32 @@ public class WeChatNotifier implements Notificator {
             String postdata = sw.createpostdata(nu, "text", APPLICATION_ID, "content",message);
             String resp = sw.post("utf-8", send_weChatMsg.CONTENT_TYPE,(new urlData()).getSendMessage_Url(), postdata, token);
             System.out.println(token);
+
+            //       System.out.println(a);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    public void doGroupNotifications(Build build,String message, Set<SUser> users) {
+        String chat_id = build.getBuildType().getBuildParameter("env.CHAT_ID");
+        List<WeChatUser> value;
+        Map<String, String> myMap = new HashMap<String, String>();
+        send_weChatMsg swgroup = new send_weChatMsg();
+        try {
+            Singleton singleton = Singleton.getInstance();
+            Map<String, Object> map = singleton.getAccessTokenAndJsapiTicket(APPID,
+                    APPSCREAT);
+            String token = (String) map.get("access_token");
+
+            String postdata2 = swgroup.creategrouppostdata(chat_id, "text", "content",message);
+            String resp2 = swgroup.post("utf-8", send_weChatMsg.CONTENT_TYPE,(new urlData()).getGroupSendMessage_Url(), postdata2, token);
+            System.out.println(token);
             //       String a = sw.getDep(token);
             //       System.out.println(a);
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
-
 
 }
 

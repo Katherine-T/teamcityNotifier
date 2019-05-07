@@ -44,6 +44,10 @@ public class Test {
             String postdata = sw.createpostdata(nu, "text", APPLICATION_ID, "content","success");
             String resp = sw.post("utf-8", send_weChatMsg.CONTENT_TYPE,(new urlData()).getSendMessage_Url(), postdata, token);
             System.out.println(token);
+
+            String postdata2 = sw.creategrouppostdata("BINotiGroup", "text", "content","test");
+            String resp2 = sw.post("utf-8", send_weChatMsg.CONTENT_TYPE,(new urlData()).getGroupSendMessage_Url(), postdata2, token);
+            System.out.println(token);
      //       String a = sw.getDep(token);
      //       System.out.println(a);
         } catch (Exception e) {
